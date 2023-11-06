@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color: #13544E;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.wrapper{
+	min-height: 500px;
+	width: 1000px;
+	padding: 70px;
+	border-radius: 7px;
+	background-color: #DDA039;
+	display: flex;
+	align-items:center;
+}
+.wrapper div:first-child{
+	flex: 1;
+	margin: 0px;
+}
+.wrapper div:last-child{
+		flex:2;
+		margin: 0px;
+		padding-left: 50px;
+}
+.wrapper div h1{
+	color: #13544E;
+	font-size: 40px;
+	line-height: 50px;
+	border-left: 5px solid #13544E;
+	padding: 10px;
+}
+.wrapper div input[type=submit]{
+	padding: 15px;
+	background-color: #13544E;
+	border:none;
+	color:white;
+	border-radius: 5px;
+	margin: 20px 0;
+	cursor: pointer;
+}
+.wrapper div input[type=text]{
+	width: 100%;
+	padding: 10px;
+	margin-bottom:10px;
+	border-bottom:2px solid #13544E !important;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size:16px;
+	font-weight: 700;
+	color: #13544E;
+}
+.wrapper div input[type=text]:focus{
+	border-bottom:3px solid #13544E !important;
+}
+.wrapper div input[type=text]::placeholder{
+	color:rgb(0, 0, 0,0.4	);
+}
+.error{
+	color:red;
+	display: none;
+}

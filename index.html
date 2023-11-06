@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grade Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div>
+			<h1>Student Grade Calculator</h1>
+		</div>
+		<div>
+			<input type="text" name="math" placeholder="Enter Your Math Marks" onkeypress="return /[0-9]/i.test(event.key)">
+			<p class="error">Marks should be in between 0 to 100.</p>
+
+			<input type="text" name="computer" placeholder="Enter Your Computer Marks" onkeypress="return /[0-9]/i.test(event.key)">
+			<p class="error">Marks should be in between 0 to 100.</p>
+
+			<input type="text" name="physics" placeholder="Enter Your Physics Marks" onkeypress="return /[0-9]/i.test(event.key)">
+			<p class="error">Marks should be in between 0 to 100.</p>
+
+			<input type="text" name="english" placeholder="Enter Your English Marks" onkeypress="return /[0-9]/i.test(event.key)">
+			<p class="error">Marks should be in between 0 to 100.</p>
+
+			<input type="submit" name="calculate" value="Calculate" onclick="calculate()">
+			<p id="result"></p>
+		</div>
+	</div>
+
+</body>
+</html>
